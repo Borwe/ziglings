@@ -31,7 +31,7 @@ const std = @import("std");
 const Color = enum(u32) {
     red = 0xff0000,
     green = 0x00ff00,
-    blue = ???,
+    blue = 0x0000ff,
 };
 
 pub fn main() void {
@@ -59,6 +59,6 @@ pub fn main() void {
     , .{
         @enumToInt(Color.red),
         @enumToInt(Color.green),
-        @enumToInt(???), // Oops! We're missing something!
+        @enumToInt(Color.blue), // Oops! We're missing something!
     });
 }
